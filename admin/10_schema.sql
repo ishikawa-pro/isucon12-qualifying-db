@@ -30,4 +30,4 @@ CREATE TABLE `visit_history` (
   INDEX `tenant_id_idx` (`tenant_id`)
 ) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8mb4;
 
-create index tenant_id_competition_id_player_id on visit_history(tenant_id,competition_id);
+create index tenant_id_competition_id_player_id_player_id on visit_history(tenant_id,competition_id, player_id);
